@@ -1,0 +1,116 @@
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    text-align: center;
+}
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(194, 207, 228);
+}
+.row + .row{
+    margin-top: 30px;
+}
+/* status styles */
+p.status{
+    visibility: hidden;
+    text-transform: capitalize;
+    height: 1.4em;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 4px;
+    letter-spacing: 3pt;
+}
+.success{
+    background-color: rgb(174, 253, 178);
+    color: rgb(52, 105, 54);
+}
+.error{
+    background-color: rgb(253, 186, 174);
+    color: rgb(114, 48, 46);
+}
+/* input styles */
+.product-input{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product-input input{
+    background-color: rgb(220, 238, 253);
+    border: none;
+    padding: 3px 15px;
+    font-size: 1.1em;
+    outline: none;
+}
+.product-input button{
+    background-color: rgb(130, 178, 221);
+}
+.product-input button:hover{
+    background-color: rgb(53, 123, 184);
+    color: white;
+}
+/* products box styles */
+li{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all .8s ease;
+    color: rgb(71, 71, 71);
+}
+li:hover{
+    background-color: rgb(220, 238, 253);
+    color: rgb(80, 112, 151);
+}
+li + li{
+    margin-top: 10px;
+}
+li span{
+    letter-spacing: 1.5pt;
+}
+button[id='edit']{
+    color: rgb(94, 255, 102);
+}
+button[id='edit']:hover{
+    color: rgb(41, 146, 46);
+}
+button[id='delete']{
+    color: rgb(252, 112, 112);
+    margin-left: 8px;
+}
+button[id='delete']:hover{
+    color: rgb(163, 51, 51);
+}
+/* clear button style */
+button[id='clear']{
+    display: block;
+    visibility: hidden;
+    margin: auto;
+    color: rgb(185, 50, 50);
+    letter-spacing: 1.5pt;
+}
+
